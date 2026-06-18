@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #0f0f0f;
+  color: #f1f1f1;
+}
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.form input {
+  flex: 1;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: #1a1a1a;
+  color: #f1f1f1;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.form input:focus {
+  border-color: #ff0000;
+}
+
+.form button {
+  padding: 0.6rem 1.25rem;
+  background: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.form button:hover {
+  background: #cc0000;
+}
+
+.error {
+  color: #ff4444;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.count {
+  color: #888;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.clear-btn {
+  background: none;
+  border: 1px solid #444;
+  color: #aaa;
+  padding: 0.35rem 0.75rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.clear-btn:hover {
+  border-color: #ff4444;
+  color: #ff4444;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #222;
+}
+
+.iframe-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.iframe-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.remove-btn {
+  width: 100%;
+  padding: 0.45rem;
+  background: none;
+  border: none;
+  border-top: 1px solid #222;
+  color: #888;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.remove-btn:hover {
+  color: #ff4444;
+}
