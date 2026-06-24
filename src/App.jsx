@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Analytics } from "@vercel/analytics/next"
 import "./App.css";
 
 function extractYouTubeId(url) {
@@ -84,6 +85,7 @@ function App() {
   return (
     <div className="app">
       <h1>YouTube Links</h1>
+      <Analytics />
 
       <form className="form" onSubmit={handleSubmit}>
         <input
